@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { config } from "@/lib/config";
 
 export function Hero() {
   return (
@@ -15,7 +16,7 @@ export function Hero() {
         </p>
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
-            href="https://app.orthogen.fr/signup"
+            href={config.signupUrl}
             className="rounded-xl bg-brand-600 px-8 py-3.5 text-base font-semibold text-white shadow-lg hover:bg-brand-700 transition-colors"
           >
             Commencer gratuitement

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { config } from "@/lib/config";
 
 export function Footer() {
   return (
@@ -19,7 +20,7 @@ export function Footer() {
           <Link href="#pricing" className="hover:text-gray-900 transition-colors">
             Tarifs
           </Link>
-          <a href="mailto:contact@orthogen.fr" className="hover:text-gray-900 transition-colors">
+          <a href={`mailto:${config.contactEmail}`} className="hover:text-gray-900 transition-colors">
             Contact
           </a>
           <Link href="/mentions-legales" className="hover:text-gray-900 transition-colors">
