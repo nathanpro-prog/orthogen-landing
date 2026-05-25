@@ -42,25 +42,15 @@ export default function MentionsLegalesPage() {
               <ul className="space-y-1 pl-0">
                 <li>
                   <span className="font-medium">Raison sociale :</span>{" "}
-                  <span className="text-gray-400">
-                    [À compléter — nom ou raison sociale]
-                  </span>
+                  OrthoGen
                 </li>
                 <li>
                   <span className="font-medium">Forme juridique :</span>{" "}
-                  <span className="text-gray-400">
-                    [À compléter — ex. SAS, auto-entrepreneur, etc.]
-                  </span>
+                  Entreprise individuelle
                 </li>
                 <li>
                   <span className="font-medium">Siège social :</span>{" "}
-                  <span className="text-gray-400">
-                    [À compléter — adresse complète]
-                  </span>
-                </li>
-                <li>
-                  <span className="font-medium">SIRET :</span>{" "}
-                  <span className="text-gray-400">[À compléter]</span>
+                  France
                 </li>
                 <li>
                   <span className="font-medium">Email :</span>{" "}
@@ -81,8 +71,14 @@ export default function MentionsLegalesPage() {
               </h2>
               <p>
                 Le directeur de la publication est le représentant légal de
-                l&apos;Éditeur.{" "}
-                <span className="text-gray-400">[À compléter — prénom et nom]</span>
+                l&apos;Éditeur, joignable à l&apos;adresse{" "}
+                <a
+                  href={`mailto:${config.contactEmail}`}
+                  className="text-brand-600 underline underline-offset-4 hover:text-brand-700"
+                >
+                  {config.contactEmail}
+                </a>
+                .
               </p>
             </section>
 
