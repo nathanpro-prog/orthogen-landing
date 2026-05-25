@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function MentionsLegalesPage() {
   return (
     <>
-      <Navbar />
+      <Navbar showNavLinks={false} />
       <main className="bg-white">
         <div className="mx-auto max-w-3xl px-6 py-16">
           {/* Page title */}
