@@ -242,7 +242,7 @@ export default function MentionsLegalesPage() {
           </div>
         </div>
       </main>
-      <Footer />
+      <Footer showNavLinks={false} />
     </>
   );
 }
