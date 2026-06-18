@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { config } from "@/lib/config";
 
 const plans = [
   {
@@ -8,7 +7,7 @@ const plans = [
     period: "/ mois",
     description: "30 jours d'essai gratuit — sans carte bancaire, sans engagement.",
     cta: "Démarrer l'essai gratuit",
-    ctaHref: config.signupProUrl,
+    ctaHref: "https://app.orthogen.fr/signup?plan=pro",
     highlighted: true,
     features: [
       "Bilans illimités",
@@ -28,7 +27,7 @@ const plans = [
     period: "/ mois",
     description: "Pour les structures multi-praticiens qui veulent centraliser leur activité.",
     cta: "Nous contacter",
-    ctaHref: `mailto:${config.contactEmail}`,
+    ctaHref: "mailto:contact@orthogen.fr",
     highlighted: false,
     features: [
       "Tout ce qui est inclus dans Pro",
@@ -137,8 +136,8 @@ export function Pricing() {
 
         <p className="mt-10 text-center text-sm text-gray-400">
           Vous avez des questions ? Écrivez-nous à{" "}
-          <a href={`mailto:${config.contactEmail}`} className="text-brand-600 hover:underline">
-            {config.contactEmail}
+          <a href="mailto:contact@orthogen.fr" className="text-brand-600 hover:underline">
+            contact@orthogen.fr
           </a>
         </p>
       </div>

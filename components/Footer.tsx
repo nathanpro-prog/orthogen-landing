@@ -34,6 +34,12 @@ export function Footer({ showNavLinks = true }: FooterProps) {
           <Link href="/mentions-legales" className="hover:text-gray-900 transition-colors">
             Mentions légales
           </Link>
+          <Link href="/privacy" className="hover:text-gray-900 transition-colors">
+            Confidentialité
+          </Link>
+          <Link href="/terms" className="hover:text-gray-900 transition-colors">
+            CGU
+          </Link>
         </nav>
         <p className="text-xs text-gray-400">
           © {new Date().getFullYear()} OrthoGen. Tous droits réservés.

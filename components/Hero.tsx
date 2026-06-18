@@ -1,10 +1,12 @@
 import Link from "next/link";
-import { config } from "@/lib/config";
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 to-white px-6 py-24 text-center">
       <div className="mx-auto max-w-3xl">
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-brand-100 px-4 py-1.5 text-sm font-medium text-brand-700">
+          ✦ Propulsé par Claude AI
+        </div>
         <h1 className="mb-6 text-5xl font-extrabold tracking-tight text-gray-900 sm:text-6xl">
           Vos bilans orthophoniques{" "}
           <span className="text-brand-600">en quelques minutes</span>
@@ -16,7 +18,7 @@ export function Hero() {
         </p>
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
-            href={config.signupUrl}
+            href="https://app.orthogen.fr/signup"
             className="rounded-xl bg-brand-600 px-8 py-3.5 text-base font-semibold text-white shadow-lg hover:bg-brand-700 transition-colors"
           >
             Commencer gratuitement
